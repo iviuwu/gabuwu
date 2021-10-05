@@ -9,22 +9,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Pacifico&family=Yaldevi:wght@500&display=block" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&family=Yaldevi:wght@500&display=block" rel="stylesheet">
 </head>
 <body>
     <div id="bienvenida" class="flex-container">
         <img class="image animate__animated animate__fadeInLeft" src="images/hb.png">
         <h1 class="title animate__animated animate__fadeInLeft">Bienvenida<br>futura princesa</h1>
-        <a href="#cuestionario">
+        <a href="#musica">
             <i id="down-arrow" class="down-arrow animate__animated animate__bounceInUp animate__slow fas fa-chevron-circle-down"></i>
         </a>
     </div>
+    <div id="musica" class="musica">
+        <img class="image" src="images/sorry.png">
+        <p class="disculpa">Antes de continuar con el proceso, le aconsejamos ambientar el momento con música acorde al momento. Lamentamos informar que nuestros operadores no tuvieron tiempo para elaborar una lista de reproducción nueva, sin embargo, podemos ofrecerle una opción creada previamente con mucho amor de por medio.</p>
+        <a href="https://open.spotify.com/playlist/6544mf1dToETyko9PiNwHV?si=3db5fe0731874c09">
+            <div class="spotify-button">
+                <i class="spotify-logo fab fa-spotify"></i>
+                <p class="spotify-text">REPRODUCIR</p>
+            </div>
+        </a>
+        <a href="#cuestionario">
+            <i id="down-arrow" class="down-arrow fas fa-chevron-circle-down"></i>
+        </a>
+    </div>
     <div id="cuestionario" class="cuestionario">
-        <header>
+        <div>
             <h1 class="title">Cuestionario</h1>
             <img class="image" src="images/kurody.png">
             <p>Para avanzar con la aplicación para convertirte en una nueva princesa, te solicitamos que respondas las siguientes preguntas.</p>
-        </header>
+        </div>
         <section>
             <form name="quizForm" onsubmit="return verificarRespuestas()">
                 
