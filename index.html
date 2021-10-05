@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Pacifico&family=Yaldevi:wght@500&display=block" rel="stylesheet">
+</head>
+<body>
+    <div id="bienvenida" class="flex-container">
+        <img class="image animate__animated animate__fadeInLeft" src="images/hb.png">
+        <h1 class="title animate__animated animate__fadeInLeft">Bienvenida<br>futura princesa</h1>
+        <a href="#cuestionario">
+            <i id="down-arrow" class="down-arrow animate__animated animate__bounceInUp animate__slow fas fa-chevron-circle-down"></i>
+        </a>
+    </div>
+    <div id="cuestionario" class="cuestionario">
+        <header>
+            <h1 class="title">Cuestionario</h1>
+            <img class="image" src="images/kurody.png">
+            <p>Para avanzar con la aplicación para convertirte en una nueva princesa, te solicitamos que respondas las siguientes preguntas.</p>
+        </header>
+        <section>
+            <form name="quizForm" onsubmit="return verificarRespuestas()">
+                
+                <h3 class="pregunta">1. ¿Tenés un rostro de muñequita tallada a mano?</h3>
+                <div class="opcion"><input type="radio" name="p1" value="a">Verdadero</div><br/>
+                <div class="opcion"><input type="radio" name="p1" value="b">Falso</div><br/>
+
+                <h3 class="pregunta">2. ¿Tenés unos ojos dulces con una mirada encantadora?</h3>
+                <div class="opcion"><input type="radio" name="p2" value="a">Verdadero</div><br/>
+                <div class="opcion"><input type="radio" name="p2" value="b">Falso</div><br/>
+
+                <h3 class="pregunta">3. ¿Tenés una voz tierna y cálida que transmite tranquilidad a los que te rodean?</h3>
+                <div class="opcion"><input type="radio" name="p3" value="a">Verdadero</div><br/>
+                <div class="opcion"><input type="radio" name="p3" value="b">Falso</div><br/>
+
+                <h3 class="pregunta">4. ¿Tenés una nariz hermosa con una curva ideal?</h3>
+                <div class="opcion"><input type="radio" name="p4" value="a">Verdadero</div><br/>
+                <div class="opcion"><input type="radio" name="p4" value="b">Falso</div><br/>
+
+                <h3 class="pregunta">5. ¿Tenés una personalidad que te hace única y unos gustos increíbles?</h3>
+                <div class="opcion"><input type="radio" name="p5" value="a">Verdadero</div><br/>
+                <div class="opcion"><input type="radio" name="p5" value="b">Falso</div><br/>
+
+                <h3 class="pregunta">6. ¿Tenés una boca deseable, con dientes perfectos y una sonrisa envidiable?</h3>
+                <div class="opcion"><input type="radio" name="p6" value="a">Verdadero</div><br/>
+                <div class="opcion"><input type="radio" name="p6" value="b">Falso</div><br/>
+
+                <h3 class="pregunta">7. ¿Tenés un carisma enorme y hacés reir a las personas que amás?</h3>
+                <div class="opcion"><input type="radio" name="p7" value="a">Verdadero</div><br/>
+                <div class="opcion"><input type="radio" name="p7" value="b">Falso</div><br/>
+
+                <h3 class="pregunta">8. ¿Tenés un cabello suave, lacio, lindo y con un corte que te queda pintado?</h3>
+                <div class="opcion"><input type="radio" name="p8" value="a">Verdadero</div><br/>
+                <div class="opcion"><input type="radio" name="p8" value="b">Falso</div><br/>
+
+                <h3 class="pregunta">9. ¿Tenés un cuerpo digno de una diosa que enamora con cada una de sus partes?</h3>
+                <div class="opcion"><input type="radio" name="p9" value="a">Verdadero</div><br/>
+                <div class="opcion"><input type="radio" name="p9" value="b">Falso</div><br/>
+
+
+                <div id="resultado"></div>
+                <div id="correccion"></div>
+                <input class="enviar" type="submit" value="ENVIAR"></a>
+            </form>
+        </section>
+    </div>
+    <script src="code.js"></script>
+    <script preload src="https://kit.fontawesome.com/5192e2c541.js" crossorigin="anonymous"></script>
+</body>
+</html>
